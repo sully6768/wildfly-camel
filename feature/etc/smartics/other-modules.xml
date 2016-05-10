@@ -27,21 +27,21 @@
         <include artifact=":cglib-nodep" />
     </module>
 
-    <module name="com.fasterxml.jackson.core.jackson-annotations" inherit-slot="false" slot="2.7">
+    <module name="com.fasterxml.jackson.core.jackson-annotations" inherit-slot="false" slot="2.8">
         <properties>
             <property name="jboss.api" value="private"/>
         </properties>
         <include artifact=":jackson-annotations" />
     </module>
 
-    <module name="com.fasterxml.jackson.core.jackson-core" inherit-slot="false" slot="2.7">
+    <module name="com.fasterxml.jackson.core.jackson-core" inherit-slot="false" slot="2.8">
         <properties>
             <property name="jboss.api" value="private"/>
         </properties>
         <include artifact=":jackson-core" />
     </module>
 
-    <module name="com.fasterxml.jackson.core.jackson-databind" inherit-slot="false" slot="2.7">
+    <module name="com.fasterxml.jackson.core.jackson-databind" inherit-slot="false" slot="2.8">
         <properties>
             <property name="jboss.api" value="private"/>
         </properties>
@@ -51,50 +51,53 @@
         </dependencies>
     </module>
 
-    <module name="com.fasterxml.jackson.dataformat.cbor" inherit-slot="false" slot="2.7">
+    <module name="com.fasterxml.jackson.dataformat.cbor" inherit-slot="false" slot="2.8">
         <properties>
             <property name="jboss.api" value="private"/>
         </properties>
         <include artifact=":jackson-dataformat-cbor" />
     </module>
 
-    <module name="com.fasterxml.jackson.dataformat.smile" inherit-slot="false" slot="2.7">
+    <module name="com.fasterxml.jackson.dataformat.smile" inherit-slot="false" slot="2.8">
         <properties>
             <property name="jboss.api" value="private"/>
         </properties>
         <include artifact=":jackson-dataformat-smile" />
         <dependencies>
-            <module name="com.fasterxml.jackson.core.jackson-core"  slot="2.7"/>
+            <module name="com.fasterxml.jackson.core.jackson-core"  slot="2.8"/>
         </dependencies>
     </module>
 
-    <module name="com.fasterxml.jackson.dataformat.xml" inherit-slot="false" slot="2.7">
+    <module name="com.fasterxml.jackson.dataformat.xml" inherit-slot="false" slot="2.8">
         <properties>
             <property name="jboss.api" value="private"/>
         </properties>
+        <apply-to-dependencies skip="true">
+            <include module="org.codehaus.woodstox.core" />
+        </apply-to-dependencies>
         <include artifact=":jackson-dataformat-xml" />
     </module>
 
-    <module name="com.fasterxml.jackson.dataformat.yaml" inherit-slot="false" slot="2.7">
+    <module name="com.fasterxml.jackson.dataformat.yaml" inherit-slot="false" slot="2.8">
         <properties>
             <property name="jboss.api" value="private"/>
         </properties>
         <include artifact=":jackson-dataformat-yaml" />
     </module>
 
-    <module name="com.fasterxml.jackson.datatype.joda" inherit-slot="false" slot="2.7">
+    <module name="com.fasterxml.jackson.datatype.joda" inherit-slot="false" slot="2.8">
         <properties>
             <property name="jboss.api" value="private"/>
         </properties>
         <include artifact=":jackson-datatype-joda" />
     </module>
 
-    <module name="com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider" inherit-slot="false" slot="2.7">
+    <module name="com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider" inherit-slot="false" slot="2.8">
         <include artifact=":jackson-jaxrs-base" />
         <include artifact=":jackson-jaxrs-json-provider" />
         <include artifact=":jackson-module-jaxb-annotations" />
         <dependencies>
-            <module name="com.fasterxml.jackson.core.jackson-annotations"  slot="2.7"/>
+            <module name="com.fasterxml.jackson.core.jackson-annotations"  slot="2.8"/>
         </dependencies>
     </module>
 
@@ -223,6 +226,13 @@
         <include artifact=":commons-csv" />
     </module>
     
+    <module name="org.apache.commons.httpclient">
+        <properties>
+            <property name="jboss.api" value="private"/>
+        </properties>
+        <include artifact="commons-httpclient:commons-httpclient" />
+    </module>
+    
     <module name="org.apache.commons.lang3">
         <properties>
             <property name="jboss.api" value="private"/>
@@ -288,7 +298,7 @@
         </exports>
     </module>
 
-    <module name="org.apache.lucene" slot="5.4">
+    <module name="org.apache.lucene" slot="5.5">
         <include artifact="org.apache.lucene:lucene-analyzers-common" />
         <include artifact="org.apache.lucene:lucene-backward-codecs" />
         <include artifact="org.apache.lucene:lucene-core" />
