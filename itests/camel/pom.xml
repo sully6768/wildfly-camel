@@ -105,6 +105,14 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <redirectTestOutputToFile>false</redirectTestOutputToFile>
+                    <excludes>
+                        <exclude>**/CXFRestConsumerTest.java</exclude>
+                        <exclude>**/CXFWebServiceConsumerTest.java</exclude>
+                        <exclude>**/ElasticSearchTest.java</exclude>
+                        <exclude>**/FileURLDecodingTest.java</exclude>
+                        <exclude>**/KafkaProducerTest.java</exclude>
+                        <exclude>**/XSLTTransformTest.java</exclude>
+                    </excludes>
                 </configuration>
             </plugin>
         </plugins>
