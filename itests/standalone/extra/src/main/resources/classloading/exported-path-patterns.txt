@@ -24,13 +24,10 @@
 	^org/apache/cxf/ws/discovery(.*)
 	^org/apache/cxf/ws/security(.*)
 	^org/apache/kafka(.*)
-	^org/apache/xmlbeans
-	^org/apache/xmlbeans/impl/schema
-	^org/apache/xmlbeans/impl/values
 	^org/apache/zookeeper(.*)
 	^org/codehaus/groovy(.*)
 	^org/dozer(.*)
-	^org/elasticsearch(.*)
+#	^org/elasticsearch(.*)
 	^org/quartz(.*)
 	^org/infinispan
 	^org/infinispan/commons(.*)
