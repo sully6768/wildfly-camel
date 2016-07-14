@@ -166,6 +166,10 @@
                     <systemPropertyVariables>
                         <org.jboss.remoting-jmx.timeout>300</org.jboss.remoting-jmx.timeout>
                     </systemPropertyVariables>
+                    <excludes>
+                        <exclude>**/HawtIOIntegrationTest.java</exclude>
+                        <exclude>**/LDAPIntegrationTest.java</exclude>
+                    </excludes>
                 </configuration>
             </plugin>
         </plugins>
