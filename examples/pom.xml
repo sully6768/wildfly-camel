@@ -59,6 +59,7 @@
 
     <!-- Modules -->
     <modules>
+        <!-- [#1252] Restore examples on JDK9 
         <module>camel-activemq</module>
         <module>camel-cdi</module>
         <module>camel-cxf-jaxrs</module>
@@ -68,6 +69,7 @@
         <module>camel-jpa</module>
         <module>camel-transacted-jms</module>
         <module>itests</module>
+        -->
     </modules>
 
 </project>
