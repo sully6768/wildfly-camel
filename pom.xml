@@ -79,7 +79,7 @@
         <version.wildfly.arquillian>1.0.2.Final</version.wildfly.arquillian>
         
         <!-- Plugin versions -->
-        <version-apache-scr-plugin>1.21.0</version-apache-scr-plugin>
+        <version-apache-scr-plugin>1.22.0</version-apache-scr-plugin>
         <version-build-helper-plugin>1.9.1</version-build-helper-plugin>
         <version-docker-maven-plugin>0.14.2</version-docker-maven-plugin>
         <version-exec-maven-plugin>1.4.0</version-exec-maven-plugin>
