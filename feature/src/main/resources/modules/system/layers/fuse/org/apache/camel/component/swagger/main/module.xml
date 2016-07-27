@@ -10,6 +10,7 @@
   </resources>
   <dependencies>
     <module name="javax.api" />
+    <module name="javax.xml.bind.api" />
     <module name="com.fasterxml.jackson.core.jackson-core" slot="2.8" />
     <module name="com.fasterxml.jackson.core.jackson-annotations" slot="2.8" />
     <module name="com.fasterxml.jackson.core.jackson-databind" slot="2.8" />

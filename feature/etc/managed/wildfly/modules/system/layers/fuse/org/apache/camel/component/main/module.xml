@@ -44,9 +44,7 @@
         <module name="org.apache.camel.component.dns" export="true" services="export" optional="true" />
         <module name="org.apache.camel.component.dozer" export="true" services="export" optional="true" />
         <module name="org.apache.camel.component.ejb" export="true" services="export" optional="true" />
-        <!--  
         <module name="org.apache.camel.component.elasticsearch" export="true" services="export" optional="true" />
-        -->
         <module name="org.apache.camel.component.flatpack" export="true" services="export" optional="true" />
         <module name="org.apache.camel.component.ftp" export="true" services="export" optional="true" />
         <module name="org.apache.camel.component.groovy" export="true" services="export" optional="true" />
@@ -63,9 +61,7 @@
         <module name="org.apache.camel.component.kafka" export="true" services="export" optional="true" />
         <module name="org.apache.camel.component.ldap" export="true" services="export" optional="true" />
         <module name="org.apache.camel.component.linkedin" export="true" services="export" optional="true" />
-        <!--  
         <module name="org.apache.camel.component.lucene" export="true" services="export" optional="true" />
-        -->
         <module name="org.apache.camel.component.mail" export="true" services="export" optional="true" />
         <module name="org.apache.camel.component.metrics" export="true" services="export" optional="true" />
         <module name="org.apache.camel.component.mina2" export="true" services="export" optional="true" />
